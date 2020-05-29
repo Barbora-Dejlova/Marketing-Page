@@ -165,10 +165,18 @@ nav a:hover{
     filter: grayscale(100%)
 }
 
+.developers img {
+  border-radius: 30%;
+}
+
 .developers2 {
     padding-left: 30px;
     padding-right: 30px;
     filter: grayscale(100%)
+  }
+
+  .developers2 img {
+    border-radius: 30%;
   }
 
 .ourteam {
@@ -229,14 +237,47 @@ p {
 	max-width:25%;
 	margin: -10%;
   }
-.developers-container .developers {
-		padding:0.5%;
-		text-align:center;
-		width:80%;
+
+  .developers-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bio{
+    visibility: hidden
+  }
+
+  .developers2{
+    margin-top: -5%;
+  }
+
+  .developers p{
+    visibility: hidden;
+  }
+  
+  .developers2 p{
+    visibility: hidden;
+  }
+
+ .developers-container .developers {
+    padding:1%;
+    margin-left: 30%;
     }
 
+.developers-container .developers2 {  
+padding:1%;
+    }
+
+.developers img{
+border-radius: 40%;
+}
+
+.developers2 img{
+  border-radius: 40%;
+  }
+
 .about-text  {
-    padding: 1rem;
+  padding: 1rem;
    }
 
 /*phone view */
