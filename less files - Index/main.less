@@ -11,21 +11,37 @@ body{
       flex-direction: row;
       justify-content: center;
       justify-content: space-around;
-    }
-      .tech img:hover {
-         -webkit-filter: grayscale(100%);
-         filter: grayscale (100%);
-    }
-
- .tech {
+      
+      @media @tablet {
       display: flex;
       flex-direction: column;
+      padding-left: 100px
+   }
+
+  .tech {
+      display: flex;
+      flex-direction: column;
+
+      img {
+          border-radius: 30%;
+        }
     
-      @media @tablet{
-      padding:0.5%;
-      text-align:center;
-      width:80%;
+  @media @tablet{
+  padding:0.5%;
+  text-align:center;
+  width:80%;
+  }
+
+  img{
+    border-radius: 30%;
+    width: 300px;
+    height: 300px;
       }
+      img:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale (100%);
+   }
+}
   
 
 #customerservice{
